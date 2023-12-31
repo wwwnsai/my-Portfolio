@@ -1,0 +1,17 @@
+.projects {
+    height: 150vh;
+    padding: 4rem 5rem 10vh 4rem;
+    padding-top: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.projects__header {
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.projects__body {
+    align-items: center;
+}

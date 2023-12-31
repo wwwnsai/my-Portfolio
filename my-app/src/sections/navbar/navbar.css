@@ -1,0 +1,137 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+  
+    color-scheme: light dark;
+    color: #323232;
+    background-color: #E8E2DB;
+    
+    --beige-primary: #E8E2DB;
+    --dark-grey-primary: #323232;
+    --orange-secondary: #E25439;
+    --brown-secondary: #714A35;
+    --light-blue-secondary: #6BA0A6;
+    --light-green: #B7BF96;
+    --dark-green: #436B5C;
+    --pink-secondary: #E6B5A6;
+    --kaki-secondary: #BF9550;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+    font-family: 'SecularOne'; /* Choose a name for your font */
+    src: url('./../../../public/Fonts/SecularOne-Regular.ttf') format('truetype'); /* Adjust the path and format */
+    /* Add additional src lines for other formats if needed */
+}
+  
+.navbar {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 20vh;
+    padding: 3rem 2rem 1rem 3rem;
+    transition: padding 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--beige-primary);
+    z-index: 1000;
+}
+
+.navbar__left {
+    /* font-family: Secular One; */
+    padding: 1rem 1rem;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar__left--logo {
+    font-family: 'SecularOne', sans-serif;
+    font-size: 2rem;
+    transition: 0.35s ease-in-out;
+    /* width: 10rem; */
+}
+
+.navbar__right {
+    padding: 0 1rem;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar__right--text {
+    /* margin: 1rem; */
+    padding: 0 2rem 0.7rem 2rem;
+    /* margin: 0 2rem; */
+}
+
+.navbar__right--text:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--orange-secondary);
+    transition: 0.35s ease-in-out;
+}
+
+
+ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+ul li{
+    list-style:none;
+    transition:0.5s;
+}
+
+ul li a{
+    display: block;
+    position:relative;
+    text-decoration:none;
+    color:var(--dark-grey-primary);
+    transition:0.5s;
+}
+
+ul:hover li a{
+    transform:scale(1);
+    opacity:0.2;
+    filter:blur(5px);
+}
+
+ul li a:hover{
+    transform:scale(1.5);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+}
+
+ul li a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: transparent;
+    transition:0.5s;
+    transform-origin:top;
+    transform:scaleX(0);
+    z-index:-1;
+}
+
+ul li a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:top;
+    transform:scaleX(1);    
+}

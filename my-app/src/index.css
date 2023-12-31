@@ -1,0 +1,118 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+
+  color-scheme: light dark;
+  color: #323232;
+  background-color: #DDD0C8;
+  
+  --beige-primary: #DDD0C8;
+  --dark-grey-primary: #323232;
+  --orange-seconary: #DF6630;
+  --brown-secondary: #57160B;
+  --light-blue-secondary: #D1E8FF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--beige-primary);
+  color: var(--dark-grey-primary);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-grey-primary);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+/* ----------- responsive ----------- */
+
+/* 1920 >= */
+@media only screen and (max-width: 1920px) {
+  * {
+    font-size: 100%;
+  }
+
+  .container__right--image {
+      width: 61.35%;
+  }
+}
+
+/* 1440 >= */
+@media only screen and (max-width: 1440px) {
+  * {
+    font-size: 99%;
+  }
+
+  .container__right--image {
+      width: 60%;
+  }
+}
+
+/* 1024 >= */
+
+
+
+/* 430 >= (iphone 14 pro max)*/
+/* @media only screen and (min-width: 430px) {
+  .navbar {
+      height: 10vh;
+  }
+
+  .container {
+      height: 90vh;
+      display: block;
+  }
+
+  .container__left {
+      padding-left: 5rem;
+      margin: auto;
+  }
+
+  .container__right--image {
+      width: 70%;
+  }
+} */

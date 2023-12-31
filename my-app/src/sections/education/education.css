@@ -1,0 +1,147 @@
+/* :root {
+    font-family: 'Poppins', sans-serif;
+  
+    color-scheme: light dark;
+    color: #323232;
+    background-color: #E8E2DB;
+    
+    --beige-primary: #E8E2DB;
+    --dark-grey-primary: #323232;
+    --orange-secondary: #E25439;
+    --brown-secondary: #714A35;
+    --light-blue-secondary: #6BA0A6;
+    --light-green: #B7BF96;
+    --dark-green: #436B5C;
+    --pink-secondary: #E6B5A6;
+    --kaki-secondary: #BF9550;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+} */
+
+@font-face {
+    font-family: 'Libre Baskerville Regular'; 
+    /* src: url('./../../../public/Fonts/LibreBaskerville-Bold.ttf') format('bold');  */
+    src: url('./../../../public/Fonts/LibreBaskerville-Regular.ttf') format('regular');
+    /* src: url('./../../../public/Fonts/LibreBaskerville-Italic.ttf') format('italic'); */
+}
+
+@font-face {
+    font-family: 'Libre Baskerville Bold';
+    src: url('./../../../public/Fonts/LibreBaskerville-Bold.ttf') format('trueType'); 
+}
+
+.edu {
+    background-color: var(--beige-primary);
+    height: auto;
+    padding: 4rem 5rem 10vh 4rem;
+    padding-top: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.edu__header {
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.edu__education-header {
+    align-self: flex-end;
+    padding-left: 4rem;
+    width: 50%;
+    display: flex;
+    direction: rtl;
+}
+
+.edu__left {
+    align-self: flex-start;
+    padding-right: 4rem;
+    width: 50%;
+    display: flex;
+    direction: ltr;
+}
+
+#nav__edu {
+    height: auto;
+    padding-top: 1rem;
+}
+
+.nav__edu {
+    border-bottom: 1px solid var(--grey, #323232);
+    background-color: var(--kaki-secondary);
+    width: 100%;
+    height: 12rem;
+    justify-content: space-between; 
+    align-items: flex-end;
+    flex-shrink: 0;
+    background: var(--beige, #E8E2DB);
+    transition: 0.35s ease-in-out;
+    display: block;
+}
+
+.nav__edu--container {
+    height: 80%;
+    width: 100%;
+    color: var(--grey, #323232);
+    transition: 0.35s ease-in-out;
+    display: flex;
+    cursor: pointer;
+}
+
+.nav__edu--left {
+    font-family: "Poppins Medium", sans-serif;
+    display: flex;
+    width: 30%;
+    max-width: 30vw;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1rem;
+}
+
+.nav__edu--right {
+    font-family: 'Libre Baskerville Regular', serif;
+    font-style: normal;
+    font-size: 2.5rem;
+    display: flex;
+    width: 70%;
+    max-width: 70vw; 
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.nav__edu--arrow {
+    display: flex;
+    width: 30%;
+    /* height: 1%; */
+    justify-content: center;
+    text-align: right;
+    padding-left: 76rem;
+}
+        
+.arrow {
+    width: 1.5rem;
+    height: 0.9rem;
+    flex-shrink: 0;
+    transition: 0.35s ease-in-out;
+}
+
+.nav__edu--arrow:hover {
+    cursor: pointer;
+}
+
+.nav__edu--school {
+    color: var(--brown-secondary);
+    height: 5rem;
+    /* margin: auto; */
+    text-align: center;
+    padding-bottom: 5rem;
+    transition: ease-in-out 0.35s;
+}

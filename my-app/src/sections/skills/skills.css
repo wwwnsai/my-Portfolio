@@ -1,0 +1,137 @@
+.gradient-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+  
+.--red-gradient {
+    background: var(--red-gradient);
+    width: 50rem;
+    height: 41rem;
+    transform: rotate(-41.243deg);
+    flex-shrink: 0;
+    margin: 5vh 0 0 31vw; 
+    position: absolute;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.--blue-gradient {
+    background: var(--blue-gradient);
+    width: 41.80694rem;
+    height: 46.06213rem;
+    transform: rotate(171.365deg);
+    flex-shrink: 0;
+    margin: 60vh 0 0 39vw; 
+    position: absolute;
+    z-index: -1;
+}
+
+.--yellow-gradient {
+    background: var(--yellow-gradient);
+    width: 49.1365rem;
+    height: 38.30125rem;
+    transform: rotate(-135deg);
+    flex-shrink: 0;
+    margin: 10vh 0 0 5vw; 
+    position: absolute;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.--purple-gradient {
+    background: var(--purple-gradient);
+    width: 46.51131rem;
+    height: 48.0225rem;
+    transform: rotate(69.812deg);
+    flex-shrink: 0;
+    margin: 65vh 0rem 0 5rem; 
+    position: absolute;
+    z-index: -1;
+}
+
+.--peach-gradient {
+    background: var(--peach-gradient);
+    width: 31.30194rem;
+    height: 28.59019rem;
+    transform: rotate(14.264deg);
+    flex-shrink: 0;
+    margin: 25rem 1rem 0 0rem; 
+    position: absolute;
+    opacity: 0.7;
+    z-index: -1;
+}
+  
+.skills {
+    height: auto;
+    padding: 4rem 5rem 10vh 4rem;
+    padding-top: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.skills__header {
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.skills__body {
+    align-items: center;
+}
+
+.skills__body--programming {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.programming__header {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.programming__body {
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+}
+
+.programming__body--item {
+    cursor: default;
+    z-index: 1;
+    width: calc(25% - 5rem); 
+    height: 11rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 2rem; 
+    border-radius: 1.25rem;
+    background: rgba(232, 226, 219, 0.5);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease-in-out;
+}
+
+.programming__body--img {
+    height: 5rem;
+    padding-bottom: 1rem;
+}
+
+.programming__body--text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.programming__body--item:hover {
+    background: rgba(232, 226, 219, 0.8);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 4rem);
+    height: 12rem;
+    padding-top: 3rem;
+}

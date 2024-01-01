@@ -1,6 +1,6 @@
 .projects {
     height: 150vh;
-    padding: 4rem 5rem 10vh 4rem;
+    padding: 4rem 0rem 10vh 0rem;
     padding-top: 17vh;
     display: flex;
     flex-direction: column;
@@ -14,4 +14,70 @@
 
 .projects__body {
     align-items: center;
+    height: 66vh;
+    margin: 0;
+    padding: 0;
 }
+
+.projects__body__carousel {
+    /* background-color: var(--yellow-secondary); */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+.carousel__item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* margin: 0 1rem; */
+    position: relative;
+    background-color: var(--yellow-secondary);
+}
+  
+.carousel__item__arrow__icon {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+#arrow_left, #arrow_right {
+    flex-shrink: 0;
+    transition: 0.35s ease-in-out;
+    stroke: #714A35CC;
+}
+
+#arrow_left {
+    margin: 0 1rem 0 2rem;
+}
+
+#arrow_right {
+    margin: 0 2rem 0 1rem;
+}
+
+#arrow_left:hover, #arrow_right:hover {
+    transform: scale(1.1);
+    stroke: var(--brown-secondary);
+}
+
+.carousel__item--text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    z-index: 0;
+}
+
+.carousel__item__header {
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+

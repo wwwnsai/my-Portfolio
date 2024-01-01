@@ -1,3 +1,7 @@
+video {
+    width: 45vw;
+}
+
 .projects {
     height: 150vh;
     padding: 4rem 0rem 10vh 0rem;
@@ -27,19 +31,20 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: auto;
+    margin: 2rem auto;
 }
 
 .carousel__item {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
+    margin: 0 2rem;
     /* flex-direction: column;
     justify-content: center;
     align-items: center; */
     /* margin: 0 1rem; */
-    position: relative;
-    background-color: var(--yellow-secondary);
+    /* position: relative; */
+    background-color: var(--beige-primary);
 }
   
 .carousel__item__arrow__icon {
@@ -67,17 +72,23 @@
     stroke: var(--brown-secondary);
 }
 
+.carousel__item__video {
+    width: 70%;
+}
+
 .carousel__item--text {
     width: 100%;
     height: 100%;
-    display: flex;
-    padding: 2rem;
+    padding: 10rem 0 5rem 5rem;
     justify-content: center;
     z-index: 0;
 }
 
-.carousel__item__header {
-    padding-bottom: 1rem;
-    margin: 0 auto;
+.text--header {
+    width: 100%;
+    margin-bottom: 3rem;
 }
 
+.text--body {
+    text-align: left;
+}

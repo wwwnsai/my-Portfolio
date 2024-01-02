@@ -65,7 +65,7 @@ const Skills = () => {
                 <section className='programming__body'>
                     <section className='programming__body--item'>
                         <img src='images/logo/ielts_logo.png' alt='ielts_logo' className='programming__body--img' style={{width: '7rem', height: 'auto', padding: '1rem 0 1rem 0'}}/>
-                        <h4> IELTS </h4>
+                        <h4> IELTS 7.5 </h4>
                     </section>
                     <section className='programming__body--item'>
                         <img src='images/logo/excel_logo.png' alt='excel_logo' className='programming__body--img'/>

@@ -3,7 +3,7 @@ video {
 }
 
 .projects {
-    height: 150vh;
+    height: auto;
     padding: 4rem 0rem 10vh 0rem;
     padding-top: 17vh;
     display: flex;
@@ -12,13 +12,12 @@ video {
 }
 
 .projects__header {
-    padding-bottom: 1rem;
     margin: 0 auto;
 }
 
 .projects__body {
     align-items: center;
-    height: 66vh;
+    height: 70vh;
     margin: 0;
     padding: 0;
 }
@@ -32,6 +31,7 @@ video {
     align-items: center;
     position: relative;
     margin: 2rem auto;
+    overflow: hidden;
 }
 
 .carousel__item {
@@ -39,12 +39,8 @@ video {
     height: 100%;
     display: flex;
     margin: 0 2rem;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* margin: 0 1rem; */
-    /* position: relative; */
-    background-color: var(--beige-primary);
+    transition: display 0.35s ease-in-out;
+    /* background-color: var(--brown-secondary); */
 }
   
 .carousel__item__arrow__icon {
@@ -91,4 +87,5 @@ video {
 
 .text--body {
     text-align: left;
+    font-size: 0.75rem;
 }

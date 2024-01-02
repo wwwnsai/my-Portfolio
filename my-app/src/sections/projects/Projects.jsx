@@ -15,15 +15,20 @@ const Projects = () => {
       id: 2,
       title: 'Ultimate Alien Contact Book',
       description:
-        'Project C++ Language-based. This project aims to enhance Object-Oriented Programming knowledge by creating a contact book with multiple features. The system includes functionalities such as login, logout, and register systems, as well as the ability to search for contacts, providing a practical application for learning and implementing C++ programming concepts.',
+        'Group project of 3 C++ Language-based. This project aims to enhance Object-Oriented Programming knowledge by creating a contact book with multiple features. The system includes functionalities such as login, logout, and register systems, as well as the ability to search for contacts, providing a practical application for learning and implementing C++ programming concepts.',
     },
     {
       id: 3,
       title: 'MeowXMonster Game',
       description:
-        'This Assembly and C Language project is a Raspberry Pi game using Raylib for GUI support. Combining tower defense and third-person shooting, it demonstrates the integration of low-level programming with higher-level languages. Leveraging Raspberry Pi and Raylib, it creates a captivating gaming experience.',
+        'This Assembly and C Language group project of 6 is a Raspberry Pi game using Raylib for GUI support. Combining tower defense and third-person shooting, it demonstrates the integration of low-level programming with higher-level languages. Leveraging Raspberry Pi and Raylib, it creates a captivating gaming experience.',
     },
-    // Add more projects as needed
+    {
+      id: 4,
+      title: 'Software Engineering Hub',
+      description:
+        'The group project of 3 involves the utilization of HTML, CSS, Javascript, and Python languages, along with Fast API, to enhance the Software Engineering KMITL website. The focus is on implementing new features such as locker reservation and item borrowing, aiming to improve the overall functionality and user experience of the website.'
+    }
   ];
 
   const handleSlideChange = (direction) => {
@@ -78,6 +83,9 @@ const Projects = () => {
               className={`carousel__item` }
               style={{
                 display: project.id === currentSlide ? 'flex' : 'none',
+                transform: `translateX(${
+                  (project.id - currentSlide) * 100
+                }%)`,
               }}
             >
               {project.id === currentSlide && (
@@ -99,7 +107,7 @@ const Projects = () => {
                       <h3>{project.title}</h3>
                     </section>
                     <section className="text--body">
-                      <h5>{project.description}</h5>
+                      {project.description}
                     </section>
                   </section>
                 </>

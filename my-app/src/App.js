@@ -4,6 +4,7 @@ import Home from './sections/home/Home'
 import Education from './sections/education/Education'
 import Skills from './sections/skills/Skills'
 import Projects from './sections/projects/Projects';
+import Contact from './sections/contact/Contact';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Education />
       <Skills />
       <Projects />
+      <Contact />
     </main>
   )
 }

@@ -97,8 +97,14 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
 p {
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 

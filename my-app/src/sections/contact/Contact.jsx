@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 
 const Contact = () => {
+
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setForm({ ...form, [name]: value });
+    };
 
     return (
         <section className="contact" id="contact">
@@ -22,20 +34,44 @@ const Contact = () => {
                 <section className="contact__body--container">
                     <form className="contact__body--form">
                         <section className="contact__body--form--item">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name.." />
+                            <div className="contact__body--form--item--div">
+                                <label className="form__label">Your Name</label>
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    onChange={handleChange}
+                                    value={form.name} 
+                                    className="form__input" 
+                                    placeholder="Your name" />
+                            </div>
+
+                            <div className="contact__body--form--item--div">
+                                <label className="form__label">Your Email</label>
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    onChange={handleChange}
+                                    value={form.email} 
+                                    className="form__input" 
+                                    placeholder="Your email" />
+                            </div>
                         </section>
-                        <section className="contact__body--form--item">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your email.." />
-                        </section>
-                        <section className="contact__body--form--item">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" placeholder="Write something.." style={{height:"5rem"}}></textarea>
-                        </section>
-                        <section className="contact__body--form--item">
-                            <input type="submit" value="Submit" />
-                        </section>
+
+                        <div className="contact__body--form--item--div">
+                            <label className="form__label">Your Message</label>
+                            <textarea 
+                                className="form__input" 
+                                name="message" 
+                                onChange={handleChange}
+                                value={form.message} 
+                                id="YourMessage" 
+                                placeholder="Your message..." />
+                        </div>
+
+                        <div className="contact__body--form--item--div">
+                            <button type="submit" className="form__button">Send Message</button>
+                        </div>
+
                     </form>
                 </section>
             </section>

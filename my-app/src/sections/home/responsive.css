@@ -1,0 +1,67 @@
+/* ----------- responsive ----------- */
+
+/* 1920 >= */
+@media only screen and (max-width: 1920px) {
+    
+  
+  }
+  
+  /* 1440 >= */
+  @media only screen and (max-width: 1440px) {
+
+  }
+  
+  /* 1024 >= */
+  @media only screen and (max-width: 1240px) {
+
+    .home {
+        display: block;
+        padding-top: 10vh;
+    }
+  
+    .home__left {
+      width: 100%;
+      height: auto;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .home__right {
+        padding-top: 1rem;
+        width: 100%;
+    }
+
+    .home__right--image {
+        height: 70vh;
+    }
+
+    .home::before {
+        width: 30vw;
+        height: 40vh;
+        margin-left: 0rem;
+        filter:blur(4rem);  
+        rotate: -130deg;
+        top: calc(10vh - 10vw);
+        left: calc(50vw - 30vw);
+    }
+
+    .home::after {
+        width: 30vw;
+        height: 30vh;
+        filter:blur(3rem);
+        top: calc(20vh - 20vw);
+        right: calc(50vw - 35vw);
+    }
+  
+  }
+  
+  /* 430 >= (iphone 14 pro max)*/
+  @media only screen and (max-width: 990px) {
+    * {
+      font-size: 98%;
+    }
+    html {
+      width: 100rem;
+    }
+  
+  }

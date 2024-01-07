@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './skills.css';
+import './responsive.css';
 
 const Skills = () => {
     

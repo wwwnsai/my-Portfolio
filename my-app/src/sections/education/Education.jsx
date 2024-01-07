@@ -74,8 +74,8 @@ export const Education = () => {
             </section>
             <section className='nav__edu--arrow'>
               <svg className="arrow" xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none" style={{rotate: expandedEntries.includes(index) ? '180deg' : '0deg'}}>
-                <line x1="1" y1="-1" x2="17.4783" y2="-1" transform="matrix(0.706233 0.70798 -0.706233 0.70798 0.704102 1.00635)" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                <line x1="1" y1="-1" x2="17.4783" y2="-1" transform="matrix(-0.706233 0.70798 -0.706233 -0.70798 25.8003 0)" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <line x1="1" y1="-1" x2="17.4783" y2="-1" transform="matrix(0.706233 0.70798 -0.706233 0.70798 0.704102 1.00635)" stroke="black" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="1" y1="-1" x2="17.4783" y2="-1" transform="matrix(-0.706233 0.70798 -0.706233 -0.70798 25.8003 0)" stroke="black" strokeWidth="2" strokeLinecap="round"/>
               </svg>
             </section>
             <section className='nav__edu--container' style={{ display: expandedEntries.includes(index) ? 'block' : 'none', height: expandedEntries.includes(index) ? '0' : '10rem'}}>

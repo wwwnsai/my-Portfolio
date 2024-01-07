@@ -37,7 +37,6 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    background-color: var(--beige-primary);
     z-index: 1000;
 }
 

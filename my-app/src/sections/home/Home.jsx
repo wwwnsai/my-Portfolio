@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css'
+import './responsive.css'
 
 export const Home = () => {
   return (

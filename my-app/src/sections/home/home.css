@@ -42,7 +42,7 @@ h4 {
     margin-left: -50rem;
     filter:blur(4rem);  
     top: calc(80vh - 40vw);
-    left: calc(90vw - 20vw);
+    left: calc(80vw - 20vw);
 }
 
 .home::after {
@@ -57,6 +57,7 @@ h4 {
 
 .home {
     /* margin-top: 20vh; */
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -86,7 +87,6 @@ h4 {
 .home__right {
     padding-right: 5rem;
     width: 50%;
-    /* height: 50%;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,12 +94,11 @@ h4 {
 }
 
 .home__right--image {
-    width: 60%;
-    margin: auto;
+    /* width: 60%; */
+    margin: 0 auto;
     justify-content: center;
     z-index: 1;
-    /* height: 20%; */
-    /* display: flex; */
+    height: 100%;
     mix-blend-mode: multiply;
 }
 

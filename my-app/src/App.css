@@ -18,6 +18,19 @@
   src: url('./../public/Fonts/Poppins-Medium.ttf') format('truetype');
 }
 
+
+@font-face {
+  font-family: 'Libre Baskerville Regular'; 
+  /* src: url('./../../../public/Fonts/LibreBaskerville-Bold.ttf') format('bold');  */
+  src: url('./../public/Fonts/LibreBaskerville-Regular.ttf') format('regular');
+  /* src: url('./../../../public/Fonts/LibreBaskerville-Italic.ttf') format('italic'); */
+}
+
+@font-face {
+  font-family: 'Libre Baskerville Bold';
+  src: url('./../public/Fonts/LibreBaskerville-Bold.ttf') format('trueType'); 
+}
+
 :root {
   color-scheme: light dark;
   color: #323232;

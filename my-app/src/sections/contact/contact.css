@@ -96,6 +96,7 @@ input, textarea {
     border: none;
     padding: 0.5rem;
     background: var(--beige-primary);
+    color: var(--brown-secondary);
     border-bottom: 0.08rem solid var(--dark-grey-primary);
     box-sizing: border-box;
 }
@@ -106,6 +107,7 @@ input, textarea {
 
 .form__input:focus {
     outline: none; 
+    color: var(--brown-secondary);
     border-bottom: 2px solid var(--orange-secondary); 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
 }

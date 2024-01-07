@@ -1,0 +1,25 @@
+.footer {
+    background: var(--brown-secondary);
+    color: var(--beige-primary);
+    height: 10vh;   
+    width: 100%;
+}
+
+.footer__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.footer__body--text {
+    font-family: 'Libre Baskerville Regular', sans-serif;
+}
+
+b {
+    font-family: 'Libre Baskerville Bold', sans-serif;
+    color: white;
+}

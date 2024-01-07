@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./contact.css";
 
 const Contact = () => {
@@ -13,6 +14,23 @@ const Contact = () => {
         const name = e.target.name;
         const value = e.target.value;
         setForm({ ...form, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        axios.post(
+            "https://sheet.best/api/sheets/01ea3284-7603-48d9-842c-e999615131c9",
+            form
+            ).then((response) => {
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+            
+
+        setForm({name: "", email: "", message: ""});
     };
 
     return (
@@ -32,7 +50,7 @@ const Contact = () => {
             </section>
             <section className="contact__body">
                 <section className="contact__body--container">
-                    <form className="contact__body--form">
+                    <form className="contact__body--form" onSubmit={handleSubmit}>
                         <section className="contact__body--form--item">
                             <div className="contact__body--form--item--div">
                                 <label className="form__label">Your Name</label>
@@ -48,7 +66,7 @@ const Contact = () => {
                             <div className="contact__body--form--item--div">
                                 <label className="form__label">Your Email</label>
                                 <input 
-                                    type="email" 
+                                    type="text" 
                                     name="email" 
                                     onChange={handleChange}
                                     value={form.email} 

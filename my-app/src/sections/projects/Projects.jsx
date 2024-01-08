@@ -22,7 +22,7 @@ const Projects = () => {
       description:
         'Group project of 3 C++ Language-based. This project aims to enhance Object-Oriented Programming knowledge by creating a contact book with multiple features. The system includes functionalities such as login, logout, and register systems, as well as the ability to search for contacts, providing a practical application for learning and implementing C++ programming concepts.',
       background: 'radial-gradient(50% 50% at 50% 50%, rgba(166, 207, 230, 0.50) 0%, rgba(226, 84, 57, 0.80) 100%)',
-      video: '/videos/AltimateAlienContactbook_clip.mp4',
+      video: 'public/videos/AltimateAlienContactbook_clip.mp4',
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Projects = () => {
       description:
         'This Assembly and C Language group project of 6 is a Raspberry Pi game using Raylib for GUI support. Combining tower defense and third-person shooting, it demonstrates the integration of low-level programming with higher-level languages. Leveraging Raspberry Pi and Raylib, it creates a captivating gaming experience.',
       background: 'radial-gradient(50% 50% at 50% 50%, rgba(226, 84, 57, 0.50) 0%, #FFE176 100%)',
-      video: '/videos/MeowXMonster_clip.mp4',
+      video: 'public/videos/MeowXMonster_clip.mp4',
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const Projects = () => {
       description:
         'The group project of 3 involves the utilization of HTML, CSS, Javascript, and Python languages, along with Fast API, to enhance the Software Engineering KMITL website. The focus is on implementing new features such as locker reservation and item borrowing, aiming to improve the overall functionality and user experience of the website.',
       background: 'radial-gradient(50% 50% at 50% 50%, rgba(255, 225, 118, 0.50) 0%, #D094F5 100%)',
-      video: '/videos/SoftwareEngineeringHub_clip.mp4',
+      video: 'public/videos/SoftwareEngineeringHub_clip.mp4',
     }
   ];
 

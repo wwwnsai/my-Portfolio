@@ -86,7 +86,7 @@ const Contact = () => {
                         >
                             <a href={logo.link}>
                             <img
-                                src={`images/logo/${logo.logo_name.toLowerCase()}_logo.png`}
+                                src={`public/images/logo/${logo.logo_name.toLowerCase()}_logo.png`}
                                 alt={`${logo.logo_name} Logo`}
                                 className="contact__header--img"
                             />

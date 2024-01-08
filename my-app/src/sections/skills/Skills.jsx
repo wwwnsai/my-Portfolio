@@ -1,6 +1,7 @@
 import React from 'react';
 import './skills.css';
 import './responsive.css';
+import reactLogo from './images/logo/react_logo.png';
 
 const Skills = () => {
     
@@ -56,7 +57,7 @@ const Skills = () => {
                         <h4> Assembly </h4>
                     </section>
                     <section className='programming__body--item' style={{margin: '2rem auto'}}>
-                        <img src='images/logo/react_logo.png' alt='react_logo' className='programming__body--img'/>
+                        <img src={reactLogo} alt='react_logo' className='programming__body--img'/>
                         <h4> React </h4>
                     </section>
                 </section>

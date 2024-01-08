@@ -24,39 +24,39 @@ const Skills = () => {
                 </section>
                 <section className='programming__body'>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/python_logo.png' alt='python_logo' className='programming__body--img'/>
+                        <img src='images/logo/python_logo.png' alt='python_logo' className='programming__body--img'/>
                         <h4> Python </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/c_logo.png' alt='C_logo' className='programming__body--img'/>
+                        <img src='images/logo/c_logo.png' alt='c_logo' className='programming__body--img'/>
                         <h4> C </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/cpp_logo.png' alt='C++_logo' className='programming__body--img'/>
+                        <img src='images/logo/cpp_logo.png' alt='cpp_logo' className='programming__body--img'/>
                         <h4> C++ </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/java_logo.png' alt='java_logo' className='programming__body--img'/>
+                        <img src='images/logo/java_logo.png' alt='java_logo' className='programming__body--img'/>
                         <h4> Java </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/js_logo.png' alt='js_logo' className='programming__body--img'/>
+                        <img src='images/logo/js_logo.png' alt='js_logo' className='programming__body--img'/>
                         <h4> Javascript </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/html_logo.png' alt='html_logo' className='programming__body--img'/>
+                        <img src='images/logo/html_logo.png' alt='html_logo' className='programming__body--img'/>
                         <h4> HTML </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/css_logo.png' alt='css_logo' className='programming__body--img'/>
+                        <img src='images/logo/css_logo.png' alt='css_logo' className='programming__body--img'/>
                         <h4> CSS </h4>
                     </section>
                     <section className='programming__body--item' id='asm'>
-                        <img src='public/images/logo/asm_logo.png' alt='asm_logo' className='programming__body--img' />
+                        <img src='images/logo/asm_logo.png' alt='asm_logo' className='programming__body--img' />
                         <h4> Assembly </h4>
                     </section>
                     <section className='programming__body--item' style={{margin: '2rem auto'}}>
-                        <img src='public/images/logo/react_logo.png' alt='react_logo' className='programming__body--img'/>
+                        <img src='images/logo/react_logo.png' alt='react_logo' className='programming__body--img'/>
                         <h4> React </h4>
                     </section>
                 </section>
@@ -65,19 +65,19 @@ const Skills = () => {
                 </section>
                 <section className='programming__body'>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/ielts_logo.png' alt='ielts_logo' className='programming__body--img' style={{width: '7rem', height: 'auto', padding: '1rem 0 1rem 0'}}/>
+                        <img src='images/logo/ielts_logo.png' alt='ielts_logo' className='programming__body--img' style={{width: '7rem', height: 'auto', padding: '1rem 0 1rem 0'}}/>
                         <h4> IELTS 7.5 </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/excel_logo.png' alt='excel_logo' className='programming__body--img'/>
+                        <img src='images/logo/excel_logo.png' alt='excel_logo' className='programming__body--img'/>
                         <h4> Excel </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/ai_logo.png' alt='ai_logo' className='programming__body--img'/>
+                        <img src='images/logo/ai_logo.png' alt='ai_logo' className='programming__body--img'/>
                         <h4> Illustrator </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='public/images/logo/ps_logo.png' alt='ps_logo' className='programming__body--img'/>
+                        <img src='images/logo/ps_logo.png' alt='ps_logo' className='programming__body--img'/>
                         <h4> Photoshop </h4>
                     </section>
                 </section>

@@ -14,10 +14,10 @@ export const Home = () => {
             </h4>
             <section className="home__left--button">
                 <a href="https://github.com/wwwnsai" >
-                    <img src="images/logo/github_logo.png" alt="GithubLogo" id="GithubLogo"></img>
+                    <img src="public/images/logo/github_logo.png" alt="GithubLogo" id="GithubLogo"></img>
                 </a>
                 <a href='https://www.linkedin.com/in/thanyanit-poothong-537520282/'>
-                    <img src="images/logo/linkedin_logo.png" alt="LinkedinLogo" id="LinkedinLogo"></img>
+                    <img src="public/images/logo/linkedin_logo.png" alt="LinkedinLogo" id="LinkedinLogo"></img>
                 </a>
             </section>
         </section>

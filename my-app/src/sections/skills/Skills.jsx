@@ -28,7 +28,7 @@ const Skills = () => {
                         <h4> Python </h4>
                     </section>
                     <section className='programming__body--item'>
-                        <img src='images/logo/C_logo.png' alt='C_logo' className='programming__body--img'/>
+                        <img src='public/images/logo/C_logo.png' alt='C_logo' className='programming__body--img'/>
                         <h4> C </h4>
                     </section>
                     <section className='programming__body--item'>

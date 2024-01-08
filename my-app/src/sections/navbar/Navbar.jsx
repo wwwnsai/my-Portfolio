@@ -35,17 +35,17 @@ const Navbar = () => {
       <section className="navbar__right">
         <ul>
             <li>
-                <a href="/" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                <a href="/my-Portfolio/" className="navbar__right--text" style={{ fontSize: textFontSize }}>
                         Home
                 </a>    
             </li>
             <li>
-                <a href="/#edu" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                <a href="/my-Portfolio/#edu" className="navbar__right--text" style={{ fontSize: textFontSize }}>
                         Education
                 </a>
             </li>
             <li>
-                <a href="/#skills" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                <a href="/my-Portfolio/#skills" className="navbar__right--text" style={{ fontSize: textFontSize }}>
                         Skills
                 </a>
             </li>

@@ -14,15 +14,15 @@ export const Home = () => {
             </h4>
             <section className="home__left--button">
                 <a href="https://github.com/wwwnsai" >
-                    <img src="/images/logo/github_logo.png" alt="GithubLogo" id="GithubLogo"></img>
+                    <img src="images/logo/github_logo.png" alt="GithubLogo" id="GithubLogo"></img>
                 </a>
                 <a href='https://www.linkedin.com/in/thanyanit-poothong-537520282/'>
-                    <img src="/images/logo/linkedin_logo.png" alt="LinkedinLogo" id="LinkedinLogo"></img>
+                    <img src="images/logo/linkedin_logo.png" alt="LinkedinLogo" id="LinkedinLogo"></img>
                 </a>
             </section>
         </section>
         <section className="home__right">
-            <img src="/images/me.jpg" alt="ThanyanitPoothong" className="home__right--image"></img>
+            <img src="images/me.jpg" alt="ThanyanitPoothong" className="home__right--image"></img>
         </section>
     </section>
   )

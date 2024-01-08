@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './projects.css';
+import './responsive.css';
 
 const Projects = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -63,6 +64,16 @@ const Projects = () => {
                 background: hoveredItem === project.id ? 'transparent' : project.background,
                 opacity: hoveredItem === project.id || hoveredItem === null ? 1 : 0,
                 width: hoveredItem === project.id ? '100%' : 'calc(25% - 5rem)',
+                ...(window.innerWidth <= 1366 && { 
+                  width: '95%',
+                }),
+                ...(window.innerWidth <= 1180 && {
+                  width: '94%',
+                }),
+                ...(window.innerWidth <= 1024 && { 
+                  width: '92%',
+                }),
+
               }}
               
               onMouseEnter={() => handleItemHover(project.id)}

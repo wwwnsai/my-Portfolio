@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './education.css';
+import './responsive.css';
 
 const educationData = [
   {
@@ -62,6 +63,9 @@ export const Education = () => {
             style={{
               height: expandedEntries.includes(index) ? '20rem' : '12rem',
               padding: expandedEntries.includes(index) ? '2rem 2rem 5rem 2rem' : '2rem',
+              ...(window.innerWidth <= 1240 && {
+                height: expandedEntries.includes(index) ? '25rem' : '12rem',
+              }),
             }}
           >
             <section className='nav__edu--container'>

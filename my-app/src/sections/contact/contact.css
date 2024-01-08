@@ -16,7 +16,7 @@ input, textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     padding: 4rem;
 }
 
@@ -24,8 +24,6 @@ input, textarea {
     width: 50vw;
     height: 100%;
     padding: 1rem 0 5rem 0;
-    align-items: center;
-    justify-content: center;
 }
 
 .contact__header--text {
@@ -49,12 +47,23 @@ input, textarea {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
+    transition: 0.35 ease-in-out;
 }
 
 .contact__header--img {
     height: 2rem;
     flex-shrink: 0;
     margin: 0 1rem 0 0;
+    transition: 0.35 ease-in-out;
+}
+
+.contact__header--item div {
+    margin: 0 0.5rem; 
+    transition: 0.35s ease-in-out;
+}
+
+.logo-info {
+    transition: all 0.35s ease-in-out;
 }
 
 .contact__body {

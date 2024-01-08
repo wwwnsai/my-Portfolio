@@ -22,28 +22,76 @@
   }
 }
 
-/* 1024 >= */
-@media only screen and (max-width: 1240px) {
+/* 1180 >= */
+@media only screen and (max-width: 1180px) {
   * {
-    font-size: 95%;
+    font-size: 96%;
   }
   html {
-    width: 100vw;
-  }
-
-  .home__left {
-    width: 10%;
+    width: 100%;
   }
 
 }
 
-/* 430 >= (iphone 14 pro max)*/
-@media only screen and (max-width: 990px) {
+/* 1024 >= */
+@media only screen and (max-width: 1024px) {
   * {
-    font-size: 98%;
+    font-size: 95%;
   }
   html {
-    width: 100rem;
+    width: 100%;
   }
+
+}
+
+/* 820 >= (Ipad Air vertical)*/
+@media only screen and (max-width: 820px) {
+  * {
+    font-size: 90%;
+  }
+  html {
+    width: 100%;
+  }
+}
+
+/* 430 >= (iphone 14 pro max)*/
+@media only screen and (max-width: 430px) {
+  * {
+    font-size: 90%;
+  }
+  html {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 4rem !important;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 3.5rem !important;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 2.5rem !important;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 2rem !important;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 1rem !important;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
 
 }

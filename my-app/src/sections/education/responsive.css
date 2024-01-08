@@ -1,0 +1,70 @@
+/* ----------- responsive ----------- */
+
+/* 1920 >= */
+@media only screen and (max-width: 1920px) {
+    
+  
+}
+
+/* 1440 >= */
+@media only screen and (max-width: 1440px) {
+
+}
+
+/* 1024 >= */
+@media only screen and (max-width: 1024px) {
+
+    .edu {
+        padding-top: 10vh;
+    }
+
+    .nav__edu--container {
+        height: 60%;
+    }
+
+    .nav__edu--arrow {
+        padding-top: 2rem;
+    }
+
+}
+
+/* 820 >= (Ipad Air vertical) */
+@media only screen and (max-width: 820px) {
+    .edu {
+        padding-top: 12vh;
+    }
+
+    .nav__edu--container {
+        height: 60%;
+    }
+
+    .nav__edu--left {
+        font-size: 1rem;
+    }   
+
+    .nav__edu--right {
+        font-size: 1.7rem;
+    }
+}
+
+/* 430 >= (iphone 14 pro max)*/
+@media only screen and (max-width: 430px) {
+
+    .edu {
+        padding-top: 20vh;
+    }
+
+    .nav__edu--container {
+        height: 60%;
+    }
+
+    .nav__edu--left {
+        font-size: 1.2rem;
+    }   
+
+    .nav__edu--right {
+        font-size: 2rem;
+    }
+
+}
+

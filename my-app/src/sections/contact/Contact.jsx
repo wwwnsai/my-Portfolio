@@ -1,51 +1,101 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./contact.css";
+import "./responsive.css";
 
 const Contact = () => {
-
+    const logoData = [
+        {
+            id: 1,
+            logo_name: "GitHub",
+            information: "github.com/wwwnsai",
+            link: "https://github.com/wwwnsai",
+        },
+        {
+            id: 2,
+            logo_name: "LinkedIn",
+            information: "Thanyanit Poothong",
+            link: "https://www.linkedin.com/in/thanyanit-poothong-537520282/",
+        },
+        {
+            id: 3,
+            logo_name: "Email",
+            information: "pthanyanit@gmail.com",
+            link: "mailto:pthanyanit@gmail.com",
+        },
+        {
+            id: 4,
+            logo_name: "Phone",
+            information: "+66 87-090-2673",
+            link: "tel:+66870902673",
+        },
+    ];
+  
+    const [hoveredLogo, setHoveredLogo] = useState(null);
+  
+    const handleLogoHover = (logoId) => {
+      setHoveredLogo(logoId);
+    };
+  
+    const handleLogoLeave = () => {
+      setHoveredLogo(null);
+    };
+  
     const [form, setForm] = useState({
-        name: "",
-        email: "",
-        message: "",
+      name: "",
+      email: "",
+      message: "",
     });
-
+  
     const handleChange = (e) => {
-        const name = e.target.name;
-        const value = e.target.value;
-        setForm({ ...form, [name]: value });
+      const name = e.target.name;
+      const value = e.target.value;
+      setForm({ ...form, [name]: value });
     };
-
+  
     const handleSubmit = (e) => {
-        e.preventDefault();
-
-        axios.post(
-            "https://sheet.best/api/sheets/01ea3284-7603-48d9-842c-e999615131c9",
-            form
-            ).then((response) => {
-                console.log(response.data);
-            })
-            .catch((error) => {
-                console.error("Error:", error);
-            });
-            
-
-        setForm({name: "", email: "", message: ""});
+      e.preventDefault();
+  
+      axios
+        .post(
+          "https://sheet.best/api/sheets/01ea3284-7603-48d9-842c-e999615131c9",
+          form
+        )
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+  
+      setForm({ name: "", email: "", message: "" });
     };
-
+  
     return (
         <section className="contact" id="contact">
             <section className="contact__header">
                 <section className="contact__header--text">
-                    <section className="contact__header--text--title">
-                        Contact Me 
-                    </section>
+                    <section className="contact__header--text--title">Contact Me</section>
                 </section>
                 <section className="contact__header--item">
-                    <img src="images/logo/github_logo.png" alt="github_logo" className="contact__header--img"/>
-                    <img src="images/logo/linkedin_logo.png" alt="linkedin_logo" className="contact__header--img"/>
-                    <img src="images/logo/email_logo.png" alt="email_logo" className="contact__header--img"/>
-                    <img src="images/logo/phone_logo.png" alt="phone_logo" className="contact__header--img"/>
+                    {logoData.map((logo) => (
+                        <div
+                        key={logo.id}
+                        onMouseEnter={() => handleLogoHover(logo.id)}
+                        onMouseLeave={handleLogoLeave}
+                        >
+                            <a href={logo.link}>
+                            <img
+                                src={`images/logo/${logo.logo_name.toLowerCase()}_logo.png`}
+                                alt={`${logo.logo_name} Logo`}
+                                className="contact__header--img"
+                            />
+                            </a>
+                            {hoveredLogo === logo.id && (
+                                <h4 className="logo-info">{logo.information}</h4>
+                            )}
+                        </div>
+                    ))}
                 </section>
             </section>
             <section className="contact__body">

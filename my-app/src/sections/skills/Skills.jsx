@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './skills.css';
 import './responsive.css';
 
@@ -51,8 +51,8 @@ const Skills = () => {
                         <img src='images/logo/css_logo.png' alt='css_logo' className='programming__body--img'/>
                         <h4> CSS </h4>
                     </section>
-                    <section className='programming__body--item'>
-                        <img src='images/logo/asm_logo.png' alt='asm_logo' className='programming__body--img'/>
+                    <section className='programming__body--item' id='asm'>
+                        <img src='images/logo/asm_logo.png' alt='asm_logo' className='programming__body--img' />
                         <h4> Assembly </h4>
                     </section>
                     <section className='programming__body--item' style={{margin: '2rem auto'}}>

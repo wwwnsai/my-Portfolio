@@ -35,27 +35,27 @@ const Navbar = () => {
       <section className="navbar__right">
         <ul>
             <li>
-                <a href="/my-Portfolio/" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                <a href="https://wwwnsai.github.io/my-Portfolio/" className="navbar__right--text" style={{ fontSize: textFontSize }}>
                         Home
                 </a>    
             </li>
             <li>
-                <a href="/my-Portfolio/#edu" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                <a href="https://wwwnsai.github.io/my-Portfolio/#edu" className="navbar__right--text" style={{ fontSize: textFontSize }}>
                         Education
                 </a>
             </li>
             <li>
-                <a href="/my-Portfolio/#skills" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                <a href="https://wwwnsai.github.io/my-Portfolio/#skills" className="navbar__right--text" style={{ fontSize: textFontSize }}>
                         Skills
                 </a>
             </li>
             <li>
-                <a href="/#projects" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                <a href="https://wwwnsai.github.io/my-Portfolio/#projects" className="navbar__right--text" style={{ fontSize: textFontSize }}>
                     Projects
                 </a>
             </li>
             <li>
-                <a href="/#contact" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                <a href="https://wwwnsai.github.io/my-Portfolio/#contact" className="navbar__right--text" style={{ fontSize: textFontSize }}>
                     Contact
                 </a>
             </li>

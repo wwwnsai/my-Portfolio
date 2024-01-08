@@ -13,7 +13,7 @@ const Projects = () => {
       description:
         'Project Python Language-based with Pygame Library. Developed a timer and MP3 player designed to aid in studying or focusing. Utilized knowledge of the Python language and basic computer programming skills to create a functional and effective tool.',
       background: 'radial-gradient(50% 50% at 50% 50%, rgba(208, 148, 245, 0.50) 0%, #A6CFE6 100%)',
-      video: '/videos/studybuddy_clip.mp4',
+      video: 'videos/studybuddy_clip.mp4',
     },
     {
       id: 2,

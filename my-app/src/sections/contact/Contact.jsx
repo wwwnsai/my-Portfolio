@@ -7,25 +7,25 @@ const Contact = () => {
     const logoData = [
         {
             id: 1,
-            logo_name: "GitHub",
+            logo_name: "github",
             information: "github.com/wwwnsai",
             link: "https://github.com/wwwnsai",
         },
         {
             id: 2,
-            logo_name: "LinkedIn",
+            logo_name: "linkedin",
             information: "Thanyanit Poothong",
             link: "https://www.linkedin.com/in/thanyanit-poothong-537520282/",
         },
         {
             id: 3,
-            logo_name: "Email",
+            logo_name: "email",
             information: "pthanyanit@gmail.com",
             link: "mailto:pthanyanit@gmail.com",
         },
         {
             id: 4,
-            logo_name: "Phone",
+            logo_name: "phone",
             information: "+66 87-090-2673",
             link: "tel:+66870902673",
         },
@@ -86,8 +86,8 @@ const Contact = () => {
                         >
                             <a href={logo.link}>
                             <img
-                                src={`images/logo/${logo.logo_name.toLowerCase()}_logo.png`}
-                                alt={`${logo.logo_name} Logo`}
+                                src={`images/logo/${logo.logo_name}_logo.png`}
+                                alt={`${logo.logo_name}_logo`}
                                 className="contact__header--img"
                             />
                             </a>

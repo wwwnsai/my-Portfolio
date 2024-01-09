@@ -62,7 +62,7 @@ const Skills = () => {
                     </section>
                 </section>
                 <section className='programming__header'>
-                    <h3> Soft Skills </h3>
+                    <h3> Other Skills </h3>
                 </section>
                 <section className='programming__body'>
                     <section className='programming__body--item'>

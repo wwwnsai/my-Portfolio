@@ -78,7 +78,7 @@ const Projects = () => {
                 opacity: hoveredItem === project.id || hoveredItem === null ? 1 : 0,
                 width: hoveredItem === project.id ? '80%' : 'calc(33% - 5rem)',
                 display: hoveredItem === project.id || hoveredItem === null ? 'flex' : 'none',
-                margin: hoveredItem === project.id ? '10rem' : '2rem',
+                // margin: hoveredItem === project.id ? '10rem' : '2rem',
                 ...(window.innerWidth <= 1366 && { 
                   width: '95%',
                 }),

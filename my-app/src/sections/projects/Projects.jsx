@@ -38,8 +38,17 @@ const Projects = () => {
       type: 'Web Dev',
       title: 'Software Engineering Hub',
       description:
-        'The group project of 3 involves the utilization of HTML, CSS, Javascript, and Python languages, along with Fast API, to enhance the Software Engineering KMITL website. The focus is on implementing new features such as locker reservation and item borrowing, aiming to improve the overall functionality and user experience of the website.',
+        'A group project of 3 involves the utilization of HTML, CSS, Javascript, and Python languages, along with Fast API, to enhance the Software Engineering KMITL website. The focus is on implementing new features such as locker reservation and item borrowing, aiming to improve the overall functionality and user experience of the website.',
       background: 'radial-gradient(50% 50% at 50% 50%, rgba(255, 225, 118, 0.50) 0%, #D094F5 100%)',
+      video: 'videos/SoftwareEngineeringHub_clip.mp4',
+    },
+    {
+      id: 5,
+      type: 'App Dev',
+      title: 'ChobShop',
+      description:
+        'A clothes shopping pc app developed by python in Software Engineering Principle course. This app focuses on utilizing OOP, ZODB, and Qt Designer knowledge to create this project. This project is a group project of 3.',
+      background: 'radial-gradient(50% 50% at 50% 50%, rgba(208, 148, 245, 0.50) 0%, #A6CFE6 100%)',
       video: 'videos/SoftwareEngineeringHub_clip.mp4',
     }
   ];
@@ -67,7 +76,9 @@ const Projects = () => {
               style={{
                 background: hoveredItem === project.id ? 'transparent' : project.background,
                 opacity: hoveredItem === project.id || hoveredItem === null ? 1 : 0,
-                width: hoveredItem === project.id ? '100%' : 'calc(25% - 5rem)',
+                width: hoveredItem === project.id ? '80%' : 'calc(33% - 5rem)',
+                display: hoveredItem === project.id || hoveredItem === null ? 'flex' : 'none',
+                margin: hoveredItem === project.id ? '10rem' : '2rem',
                 ...(window.innerWidth <= 1366 && { 
                   width: '95%',
                 }),
@@ -88,6 +99,7 @@ const Projects = () => {
                     <section className="hovered-styles"
                     style={{
                       alignItems: 'left',
+                      margin: '2rem 5rem'
                     }}>
                       <section className="hovered-styles--video">
                         <video controls autoPlay>

@@ -56,9 +56,22 @@ const Skills = () => {
                         <img src='images/logo/asm_logo.png' alt='asm_logo' className='programming__body--img' />
                         <h4> Assembly </h4>
                     </section>
+                </section>
+                <section className='programming__header'>
+                    <h3> Frameworks </h3>
+                </section>
+                <section className='programming__body'>
                     <section className='programming__body--item' style={{margin: '2rem auto'}}>
                         <img src='images/logo/react_logo.png' alt='react_logo' className='programming__body--img'/>
                         <h4> React </h4>
+                    </section>
+                    <section className='programming__body--item' style={{margin: '2rem auto'}}>
+                        <img src='images/logo/laravel_logo.png' alt='laravel_logo' className='programming__body--img'/>
+                        <h4> Laravel </h4>
+                    </section>
+                    <section className='programming__body--item' style={{margin: '2rem auto'}}>
+                        <img src='images/logo/php_logo.png' alt='php_logo' className='programming__body--img'/>
+                        <h4> PHP </h4>
                     </section>
                 </section>
                 <section className='programming__header'>

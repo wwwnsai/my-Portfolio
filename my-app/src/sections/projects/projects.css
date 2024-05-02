@@ -26,6 +26,8 @@ video {
 
 .projects__container {
     width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
 }
@@ -34,6 +36,7 @@ video {
     color: var(--orange-secondary);
     cursor: default;
     z-index: 1;
+    display: block;
     width: calc(25% - 5rem); 
     height: 60vh;
     justify-content: center;
@@ -94,6 +97,9 @@ video {
 }
 #project04 {
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 225, 118, 0.50) 0%, #D094F5 100%);
+}
+#project05 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(208, 148, 245, 0.50) 0%, #A6CFE6 100%);
 }
 
 .carousel__item__video {

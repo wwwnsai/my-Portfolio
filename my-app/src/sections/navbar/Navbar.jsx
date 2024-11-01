@@ -35,29 +35,29 @@ const Navbar = () => {
       <section className="navbar__right">
         <ul>
             <li>
-                <a href="https://wwwnsai.github.io/my-Portfolio/" className="navbar__right--text" style={{ fontSize: textFontSize }}>
-                        Home
-                </a>    
+              <a href="https://wwwnsai.github.io/my-Portfolio/" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                Home
+              </a>    
             </li>
             <li>
-                <a href="https://wwwnsai.github.io/my-Portfolio/#edu" className="navbar__right--text" style={{ fontSize: textFontSize }}>
-                        Education
-                </a>
+              <a href="https://wwwnsai.github.io/my-Portfolio/#exp" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                Experiences
+              </a>
             </li>
             <li>
-                <a href="https://wwwnsai.github.io/my-Portfolio/#skills" className="navbar__right--text" style={{ fontSize: textFontSize }}>
-                        Skills
-                </a>
+              <a href="https://wwwnsai.github.io/my-Portfolio/#skills" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                Skills
+              </a>
             </li>
             <li>
-                <a href="https://wwwnsai.github.io/my-Portfolio/#projects" className="navbar__right--text" style={{ fontSize: textFontSize }}>
-                    Projects
-                </a>
+              <a href="https://wwwnsai.github.io/my-Portfolio/#projects" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                Projects
+              </a>
             </li>
             <li>
-                <a href="https://wwwnsai.github.io/my-Portfolio/#contact" className="navbar__right--text" style={{ fontSize: textFontSize }}>
-                    Contact
-                </a>
+              <a href="https://wwwnsai.github.io/my-Portfolio/#contact" className="navbar__right--text" style={{ fontSize: textFontSize }}>
+                Contact
+              </a>
             </li>
         </ul>
       </section>

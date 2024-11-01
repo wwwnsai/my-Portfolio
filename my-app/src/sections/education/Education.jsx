@@ -4,37 +4,29 @@ import './responsive.css';
 
 const educationData = [
   {
-    year: '2009 - 2015',
-    description: 'Elementary - Middle School',
+    year: 'Apr 2024 - Jun 2024',
+    description: 'Web Developer Internship',
     school: {
-      name: 'Patai Udom Suksa School',
-      location: 'Bangkok, Thailand (International Program)',
+      name: 'Advanced Contact Center (ACC)',
+      location: 'Bangkok, Thailand',
     },
   },
   {
-    year: '2015 - 2022',
-    description: 'High School',
+    year: 'Jun 2024 - Current',
+    description: 'Web Developer Part-time',
     school: {
-      name: 'Bodindecha (Sing Singhaseni) School',
-      location: 'Bangkok, Thailand (Science-Math Program)',
+      name: 'Advanced Contact Center (ACC)',
+      location: 'Bangkok, Thailand',
     },
   },
   {
-    year: '2018 - 2019',
-    description: 'High School',
-    school: {
-      name: 'MacArthur High School',
-      location: 'Texas, USA (Exchange Student Program)',
-    },
-  },
-{
-    year: '2022 - 2026',
-    description: 'Undergraduate School',
-    school: {
-      name: 'King Mongkut\'s Institute of Technology Ladkrabang',
-      location: 'Bangkok, Thailand (Software Engineering)',
-    },
-}
+      year: 'Jul 2024 - Current',
+      description: 'Computer Org. TA',
+      school: {
+        name: 'King Mongkut\'s Institute of Technology Ladkrabang',
+        location: 'Bangkok, Thailand',
+      },
+  }
   // Add more entries as needed
 ];
 
@@ -50,9 +42,9 @@ export const Education = () => {
   };
 
   return (
-    <section className="edu" id="edu">
+    <section className="edu" id="exp">
       <section className="edu__header">
-        <h2> Education </h2>
+        <h2> Experiences </h2>
       </section>
       <nav id='nav__edu'>
         {educationData.map((entry, index) => (

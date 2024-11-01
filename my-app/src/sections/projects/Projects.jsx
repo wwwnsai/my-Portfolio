@@ -44,12 +44,21 @@ const Projects = () => {
     },
     {
       id: 5,
-      type: 'App Dev',
+      type: 'PC App Dev',
       title: 'ChobShop',
       description:
         'A clothes shopping pc app developed by python in Software Engineering Principle course. This app focuses on utilizing OOP, ZODB, and Qt Designer knowledge to create this project. This project is a group project of 3.',
       background: 'radial-gradient(50% 50% at 50% 50%, rgba(208, 148, 245, 0.50) 0%, #A6CFE6 100%)',
-      video: 'videos/SoftwareEngineeringHub_clip.mp4',
+      video: 'videos/chobshop_clip.mp4',
+    },
+    {
+      id: 6,
+      type: 'Microservices',
+      title: 'Energy Bloom',
+      description:
+        'A group project of 3 involves the utilization of Microservices, Docker, and Kubernetes to create a system that monitors and manages smart meter. The project aims to enhance knowledge of Microservices and containerization, providing a practical application for learning and implementing these concepts.',
+      background: 'radial-gradient(50% 50% at 50% 50%, rgba(166, 207, 230, 0.50) 0%, rgba(226, 84, 57, 0.80) 100%)',
+      video: 'videos/EnergyBloom_clip.mp4',
     }
   ];
 
@@ -67,10 +76,10 @@ const Projects = () => {
         <h2> Projects </h2>
       </section>
       <section className="projects__body">
-        <section className="projects__container">
+        <section className="projects__container" key="pj_container">
           {projects.map((project) => (
             <section
-              key={project.id}
+              key={project.id + project.title}
               className="projects__body--item"
               id={`project${project.id}`}
               style={{

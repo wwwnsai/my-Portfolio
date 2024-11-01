@@ -94,6 +94,14 @@ const Skills = () => {
                         <img src='images/logo/ps_logo.png' alt='ps_logo' className='programming__body--img'/>
                         <h4> Photoshop </h4>
                     </section>
+                    <section className='programming__body--item' style={{margin: '2rem auto'}}>
+                        <img src='images/logo/docker_logo.png' alt='docker_logo' className='programming__body--img'/>
+                        <h4> Docker </h4>
+                    </section>
+                    <section className='programming__body--item' style={{margin: '2rem auto'}}>
+                        <img src='images/logo/k8s_logo.png' alt='k8s_logo' className='programming__body--img'/>
+                        <h4> K8s </h4>
+                    </section>
                 </section>
             </section>
         </section>
